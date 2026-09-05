@@ -153,6 +153,15 @@ These help control runtime behavior between development and production setup.
 
 The backend serves the production frontend build when `NODE_ENV=production` is set, which makes deployment simpler for a single-host setup.
 
+### Render Configuration
+
+- Root directory: leave blank
+- Build command: `npm run render-build`
+- Start command: `npm start`
+- Add the environment variables listed above in Render's Environment settings
+- Set `NODE_ENV=production`
+- Use a MongoDB Atlas connection string instead of the local MongoDB URI
+
 Typical deployment flow:
 
 1. Host the repo on GitHub
